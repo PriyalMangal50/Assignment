@@ -8,8 +8,12 @@ const cors = require('cors');
 const app = express();
 
 app.use(cors({
+<<<<<<< HEAD
   // Add your Vercel URL here
   origin: ['http://localhost:5173', 'https://your-frontend-app-name.vercel.app'], 
+=======
+  origin: ['https://assignment-6pfw.vercel.app/'], // Vite dev
+>>>>>>> e8542ec8f1121eaae108952843bf3f9604877578
   credentials: true
 }));
 app.use(express.json());
