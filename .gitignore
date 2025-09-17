@@ -2,6 +2,8 @@
 .env
 backend/.env
 project/.env
+backend/uploads/
+project/project/uploads/
 
 # Ignore node_modules
 node_modules/
