@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Logs
 logs
 *.log
@@ -23,3 +24,12 @@ dist-ssr
 *.sln
 *.sw?
 .env
+=======
+# Ignore environment files
+.env
+backend/.env
+project/.env
+
+# Ignore node_modules
+node_modules/
+>>>>>>> 45b422e21063f4770df44af35ea48a3cdafb8fff
