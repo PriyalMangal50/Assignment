@@ -8,7 +8,7 @@ const cors = require('cors');
 const app = express();
 
 app.use(cors({
-  origin: ['http://localhost:5173'], // Vite dev
+  origin: ['http://localhost:5000'], // Vite dev
   credentials: true
 }));
 app.use(express.json());

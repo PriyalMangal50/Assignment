@@ -7,14 +7,22 @@ const cors = require('cors');
 
 const app = express();
 
+const allowedOrigins = [
+  'http://localhost:5173', // Local frontend for development
+];
+
+// For production, add the deployed frontend URL from an environment variable
+if (process.env.FRONTEND_URL) {
+  allowedOrigins.push(process.env.FRONTEND_URL);
+}
+
 app.use(cors({
-  // Add your Vercel URL here
-  origin: ['http://localhost:5173', 'https://your-frontend-app-name.vercel.app'], 
+  origin: allowedOrigins,
   credentials: true
 }));
+
 app.use(express.json());
 
-// ...existing code...
 // Auth routes
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
