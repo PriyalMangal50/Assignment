@@ -8,7 +8,7 @@ const cors = require('cors');
 const app = express();
 
 app.use(cors({
-  origin: ['https://assignment-6pfw.vercel.app/'], // Vite dev
+  origin: ['http://localhost:5173', 'https://your-frontend-app-name.vercel.app'], 
   credentials: true
 }));
 app.use(express.json());
